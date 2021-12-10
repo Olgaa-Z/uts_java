@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class Pembayaran extends AppCompatActivity {
 
     TextView transaksi, pembayaran, itemsatu;
@@ -22,11 +24,21 @@ public class Pembayaran extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
 
+        StringBuilder tmp = new StringBuilder();
+
+
         if (bundle != null){
             int btotal = (int) bundle.get("total");
+            ArrayList<String> data = (ArrayList<String>) intent.getSerializableExtra("data_tampung");
+
             String items = (String) bundle.get("title");
 
-            transaksi.setText(String.valueOf(btotal));
+            for (int i =0; i < data.size(); i++){
+                tmp.append(data.get(i)).append(",");
+            }
+
+
+            transaksi.setText(String.valueOf(tmp));
             pembayaran.setText(String.valueOf(btotal));
         }
     }

@@ -27,12 +27,17 @@ public class MainActivity extends AppCompatActivity implements AyamAdapter.ItemC
     private int total = 0;
     private TextView totalView;
 
+    private ArrayList<String> arrayTampung;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         ayamList = new ArrayList<>();
+
+        arrayTampung = new ArrayList<>();
+
         totalView = (TextView) findViewById(R.id.total);
         setTotal(0);
         addData();
@@ -132,6 +137,10 @@ public class MainActivity extends AppCompatActivity implements AyamAdapter.ItemC
         this.total = this.total + total;
         totalView.setText(String.valueOf(this.total));
     }
+    public void setDataTampung(String item) {
+        this.arrayTampung.add(item);
+    }
+
 
     public void reset(View view) {
         this.total = 0;
@@ -153,6 +162,7 @@ public class MainActivity extends AppCompatActivity implements AyamAdapter.ItemC
                 break;
             case R.id.image:
                 setTotal(ayam.getHarga());
+                setDataTampung(ayam.getTitle());
             default:
         }
     }
@@ -162,6 +172,7 @@ public class MainActivity extends AppCompatActivity implements AyamAdapter.ItemC
 
         Intent intent = new Intent(MainActivity.this, Pembayaran.class);
         intent.putExtra("total", total);
+        intent.putExtra("data_tampung", arrayTampung);
         startActivity(intent);
     }
 }
