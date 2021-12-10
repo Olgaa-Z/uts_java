@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">UTS 12159</string>
+
+    <string-array name="title">
+        <item>Donat Strawberry</item>
+        <item>Donat Coklat</item>
+        <item>Donat Kacang</item>
+        <item>Donat Vanilla</item>
+        <item>Setengah Lusin</item>
+        <item>Selusin</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>Donat Strawberry. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</item>
+        <item>Donat Coklat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</item>
+        <item>Donat Kacang. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</item>
+        <item>Donat Vanilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</item>
+        <item>Setengah Lusin. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</item>
+        <item>Selusin. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</item>
+    </string-array>
+
+    <string-array name="harga">
+        <item>5000</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>5000</item>
+        <item>25000</item>
+        <item>50000</item>
+    </string-array>
+
+    <string-array name="image">
+        <item>@drawable/strawberry</item>
+        <item>@drawable/coklat</item>
+        <item>@drawable/kacang</item>
+        <item>@drawable/vanilla</item>
+        <item>@drawable/setengahlusin</item>
+        <item>@drawable/selusin</item>
+    </string-array>
+</resources>
