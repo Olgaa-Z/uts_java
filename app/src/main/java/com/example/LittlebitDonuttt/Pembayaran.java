@@ -28,7 +28,6 @@ public class Pembayaran extends AppCompatActivity {
 
             transaksi.setText(String.valueOf(btotal));
             pembayaran.setText(String.valueOf(btotal));
-            itemsatu.setText(String.valueOf(items));
         }
     }
 }

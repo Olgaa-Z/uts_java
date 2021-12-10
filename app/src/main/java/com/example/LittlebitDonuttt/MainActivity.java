@@ -162,7 +162,6 @@ public class MainActivity extends AppCompatActivity implements AyamAdapter.ItemC
 
         Intent intent = new Intent(MainActivity.this, Pembayaran.class);
         intent.putExtra("total", total);
-        intent.putExtra("title", getTitle() );
         startActivity(intent);
     }
 }
